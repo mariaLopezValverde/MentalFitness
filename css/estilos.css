@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Lato-Light";
+  src: url(/Lato/Lato-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(/Lato/Lato-Regular.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.transparent-header {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Lato-Light";
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px; /* Ajusta el ancho del logo según tus necesidades */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px; /* Espacio entre cada opción del menú */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho de la última opción del menú */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #6f3592;
+    font-size: 20px;
+    transition: transform 0.3s; /* Agregamos una transición suave */
+  }
+
+  nav ul li a:hover {
+    transform: scale(1.1); /* Agranda la opción al pasar el cursor */
+  }
+  
+  .more-icon img {
+    width: 20px; /* Ajusta el ancho del icono "más" según tus necesidades */
+  }
+
+  .main-section {
+    position: relative;
+  }
+  
+  .video-container {
+    position: relative;
+    overflow: hidden; /* Evita que el video se desborde en pantallas pequeñas */
+    background-color: #f0f4f9;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto; /* Ajusta la altura del video automáticamente */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #201a16;
+    font-family: "Lato-Light";
+  }
+  
+  .text-overlay h2 {
+    font-size: 38px;
+    margin: 0;
+    padding: 20px;
+    font-weight: normal;
+  }
+
+  .talleres-section {
+    padding: 40px;
+    background-color: #f0f4f9;
+  }
+  
+  .talleres-title {
+    color: #6d2d8e;
+    text-align: center;
+    font-family: "Lato-Light";
+    font-size: 28px;
+  }
+  
+  .talleres-description {
+    color: #b4a4cb;
+    text-align: center;
+    font-family: "Lato-Light";
+  }
+  
+  .talleres-modalidad {
+    color: #b4a4cb;
+    margin-top: 0;
+  }
+  
+  .talleres-modalidad-details {
+    padding-left: 20px;
+  }
+  
+  .talleres-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .taller-card {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px;
+    border: 2px solid #9d7fb3;
+  }
+
+  .taller-card:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .taller-card h3 {
+    margin-top: 0;
+  }
+  
+  .taller-card ul {
+    padding-left: 20px;
+  }
+
+  .card-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+
+  .taller-title{
+    color: black;
+    text-align: center;
+    font-family: "Lato-Light";
+    font-size: 20px;
+    
+  }
+  .taller-subtitle{
+    color: black;
+    text-align: center;
+    font-family: "Lato-Light";
+    font-size: 15px;
+    font-weight: none; 
+  }
+  
+/* pantallas grandes */
+@media (min-width: 769px) {
+
+    
+
+
+}
+
+/* pantallas pequeñas */
+@media (max-width: 1025px) {
+
+  .transparent-header {
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  .more-icon {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .taller-card {
+    width: 100%;
+  }
+
+   
+}
