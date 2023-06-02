@@ -27,7 +27,7 @@
       <a href="#"><img src="more-icon.png" alt="Más"></a>
     </div>
   </header>
-
+  <!--SECCION PRINCIPAL-->
   <section class="main-section">
     <div class="video-container">
       <video autoplay muted loop>
@@ -38,7 +38,7 @@
       <h2>Profesionalismo, confidencialidad y constancia con pasión en todas nuestras actividades</h2>
     </div>
   </section>
-
+  <!--TALLERES-->
   <section class="talleres-section">
     <h2 class="talleres-title">Talleres</h2> 
     <p class="talleres-description">Impartimos talleres especialmente diseñados para las necesidades específicas de cada
@@ -59,7 +59,7 @@
             <li>Identificar y trabajar creencias erróneas</li>
             <li>Trabajar una nueva postura ante la vida</li>
           </ul>
-          <p><strong>Población:</strong> Personas con sobrepeso, con intentos fallidos al bajar o peso o mantener un estilo
+          <p class="text-taller">Población: Personas con sobrepeso, con intentos fallidos al bajar o peso o mantener un estilo
             de vida saludable, personas que deben hacer mucho esfuerzo por mantener el peso deseado. Aptos para ser llevados
             de forma individual o grupal.</p>
         
@@ -79,7 +79,7 @@
             <li>Identificar momentos clave en la vida y su influencia en el cuerpo</li>
             <li>Darle una nueva interpretación a la historia para trabajar perdón y aceptación</li>
           </ul>
-          <p><strong>Población:</strong> Personas que padecen estrés y ansiedad, personas con padecimientos físicos
+          <p class="text-taller">Población: Personas que padecen estrés y ansiedad, personas con padecimientos físicos
             recurrentes o enfermedades crónicas.</p>
         
         </div>
@@ -99,7 +99,7 @@
             <li>Brindar herramientas para afrontar crisis</li>
             <li>Trabajar la postura ante la vida y sus desafíos</li>
           </ul>
-          <p><strong>Población:</strong> Personas que han experimentado crisis existenciales y/o que deseen conocer su
+          <p class="text-taller">Población: Personas que han experimentado crisis existenciales y/o que deseen conocer su
             sentido de vida.</p>
       
         </div>
@@ -111,8 +111,91 @@
     </div>
   </section>
   
-  
+  <!--GALERIA-->
+  <section id="seccion_galeria" class="seccion_galeria">
 
+    <h2 class="header-galeria">Galería</h2> 
+
+    <div class="icard">
+      <img src="./images/slide1.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+    <div class="icard">
+      <img src="./images/slide3.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+    <div class="icard">
+      <img src="./images/slide4.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+  
+    <div class="icard">
+      <img src="./images/slide6.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+    <div class="icard">
+      <img src="./images/slide8.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+    <div class="double icard">
+      <img src="./images/slide10.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+
+    <div class="icard">
+      <img src="./images/slide12.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+    <div class="icard">
+      <img src="./images/slide13.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+    <div class="icard">
+      <img src="./images/slide14.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+    <div class="icard">
+      <img src="./images/slide15.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+    <div class="icard">
+      <img src="./images/slide5.jpg" alt="hilorama">
+      <a href="#" id="cards-btn"> <span class="texto">MÁS</span></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="left">
+      <form>
+        <div class="contact-info">
+          <label for="contacto">Contáctenos</label>
+        </div>
+        <div class="contact-info">
+          <input type="email" id="email" name="email" placeholder="E-Mail" required>
+        </div>
+        <div class="contact-info">
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+        <div class="contact-info">
+          <textarea id="mensaje" name="mensaje"  placeholder="Mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="right">
+      <div class="contact-info">
+        <label for="telefono">Teléfono:</label>
+        <span id="telefono">60874339</span>
+      </div>
+      <div class="contact-info">
+        <label for="correo">Correo electrónico:</label>
+        <span id="correo">elicacosmeticsdigital@gmail.com</span>
+      </div>
+    </div>
+    <div>
+      COPYRIGHT © MENTAL FITNESS. ALL RIGHTS RESERVED.
+    </div>
+  </footer>
 
 
 </body>
