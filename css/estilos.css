@@ -10,6 +10,7 @@
   body {
       margin: 0;
       padding: 0;
+      background-color: #f0f4f9;
   }
   .transparent-header {
       background-color: rgba(255, 255, 255, 0.5);
@@ -21,7 +22,7 @@
     }
     
     .logo img {
-      width: 100px; /* Ajusta el ancho del logo según tus necesidades */
+      width: 100px; 
     }
     
     nav ul {
@@ -33,26 +34,27 @@
     }
     
     nav ul li {
-      margin-right: 20px; /* Espacio entre cada opción del menú */
+      margin-right: 20px; 
     }
     
     nav ul li:last-child {
-      margin-right: 0; /* Elimina el margen derecho de la última opción del menú */
+      margin-right: 0; 
     }
     
     nav ul li a {
       text-decoration: none;
       color: #6f3592;
       font-size: 20px;
-      transition: transform 0.3s; /* Agregamos una transición suave */
+      transition: transform 0.3s; 
     }
   
-    nav ul li a:hover {
-      transform: scale(1.1); /* Agranda la opción al pasar el cursor */
+  
+    .items li a:hover{
+        transform: scale(1.1); 
     }
     
     .more-icon img {
-      width: 20px; /* Ajusta el ancho del icono "más" según tus necesidades */
+      width: 20px; 
     }
   
     .main-section {
@@ -61,13 +63,13 @@
     
     .video-container {
       position: relative;
-      overflow: hidden; /* Evita que el video se desborde en pantallas pequeñas */
+      overflow: hidden; 
       background-color: #f0f4f9;
     }
     
     .video-container video {
       width: 100%;
-      height: auto; /* Ajusta la altura del video automáticamente */
+      height: auto; 
     }
     
     .text-overlay {
@@ -88,7 +90,7 @@
     }
 
 
-/* Estilos para el menú hamburguesa */
+
 .menu-icon {
     display: flex;
     flex-direction: column;
@@ -101,7 +103,7 @@
 
   .menu-popup {
     position: absolute;
-    top: 17%; /* Cambiamos la posición superior para que esté justo debajo del menú */
+    top: 17%; 
     left: 0;
     display: none;
     justify-content: center;
@@ -138,20 +140,19 @@
     width: 100%;
     height: 3px;
     background-color: #6f3592;
-    transition: transform 0.3s, opacity 0.3s; /* Agregamos la transición para la opacidad */
+    transition: transform 0.3s, opacity 0.3s; 
   }
   
   .menu-icon .bar:nth-child(2) {
     margin-top: 5px;
   }
-  
-  /* Clase adicional para cambiar a la "X" */
+
   .menu-icon.active .bar:first-child {
     transform: translateY(1px) rotate(45deg);
   }
   
   .menu-icon.active .bar:nth-child(2) {
-    display: flex; /* Establecemos la opacidad a 0 en lugar de ocultar la línea */
+    display: flex; 
   }
   
   .menu-icon.active .bar:last-child {
@@ -301,65 +302,68 @@
     }
   
   
-    /* Estilos para el footer */
-    footer {
-      background-color: #f0f4f9;
-      color: #6c2d8f;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    footer .left {
-      text-align: left;
-    }
-    
-    footer .right {
-      text-align: right;
-    }
-    
-    /* Estilos para el formulario */
-    footer form {
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-    
-    footer input[type="text"],
-    footer input[type="email"],
-    footer textarea {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      border: none;
-      border-bottom: 1px solid #a5daed;
-      background-color: transparent;
-      box-sizing: border-box;
-    }
-    
-    footer button {
-      background-color: #6c2d8f;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    
-    footer button:hover {
-      background-color: #5a1d73;
-    }
-    
-    /* Estilos para la sección de información de contacto */
-    footer .contact-info {
-      margin-bottom: 10px;
-    }
+  /* Estilos para el footer */
+footer {
+    background-color: #f0f4f9;
+    color: #6c2d8f;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .left {
+    float: left;
+    text-align: left;
+    color: #6c2d8f;
+    background-color: #f0f4f9;
+  }
+  
+  footer .right {
+    float: right; 
+    text-align: right;
+    color: #6c2d8f;
+    background-color: #f0f4f9;
+  }
+  
 
+  footer form {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #a5daed;
+    background-color: transparent;
+    box-sizing: border-box;
+  }
+  
+  footer button {
+    background-color: #6c2d8f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    background-color: #5a1d73;
+  }
+  
 
-
+  footer .contact-info {
+    margin-bottom: 10px;
+  }
   
   /* pantallas grandes */
   @media (min-width: 769px) {
-  
-      
   
   
   }
@@ -423,6 +427,15 @@
         flex-wrap: wrap;
       
     }
+
+    footer {
+        background-color: #f0f4f9;
+        color: #6c2d8f;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
     
     
   
